@@ -1,0 +1,323 @@
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/bg-body.png);
+	margin-top: 15px;
+	font-family: sans-serif;
+}
+
+.container{
+	width: 90%;
+	margin: auto;
+}
+
+
+.main-header .logo {
+	border-radius: 50%;
+	width: 150px;
+	border: 1px solid #bbb;
+	display: block;
+	margin: auto;
+	margin-bottom: 15px;
+	transition: .3s;
+	cursor: pointer;
+}
+
+.main-header .logo:hover{
+	transform: rotate(360deg);
+	transition: .5s;
+}
+
+
+.main-header .toggle-nav{
+	display: block;
+	background-color: #333;
+	color: #fff;
+	width: 48px;
+	margin: auto;
+	height: 48px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.toggle-nav span{
+	font-size: 32px;
+	margin: auto;
+	width: 32px;
+	line-height: 48px;
+}
+
+.main-nav{
+	margin-bottom: 20px;
+	display: none;
+}
+
+.active{
+	display: block;
+}
+
+.main-nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+.main-nav ul li{
+	list-style: none;
+	margin-bottom: 1px;
+}
+
+.main-nav ul li a{
+	display: block;
+	color: #fff;
+	background: #333;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 50px;
+	height: 50px;
+	font-weight: bold;
+	margin: 1px 0;
+	transition: .3s;
+}
+
+.main-nav ul li a:hover{
+	background-color: #666;
+	transition: .3s;
+}
+
+.banner{
+	width: 100%;
+	display: none;
+}
+
+.banner img{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+
+.vip-products{
+}
+
+.vip-products .photo-container {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.vip-products .photo-container img:nth-child(1){
+	width: 100%;
+}
+
+.vip-products .photo-container img:nth-child(2){
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+
+
+
+.vip-products .product{
+	margin-bottom: 30px;
+}
+
+.vip-products .product h2{
+	font-size: 2em;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.vip-products .product p{
+	margin: 0;
+	margin-bottom: 25px;
+	font-size: 20px;
+	color: #555;
+}
+
+
+.vip-products .product .div-zoom{
+	position: absolute;
+	background-color: rgba(0,0,0,.5);
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	margin-top: -5%;
+	padding: 10px;
+	display: table;
+	transition: .3s;
+}
+
+.vip-products .product .div-zoom:hover{
+	background-color: rgba(255,0,0,.5);
+	transition: .3s;
+	
+}
+
+.vip-products .product .photo-container a{
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	display: table-cell;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+
+
+.more{
+	text-decoration: none;
+	color: #fff;
+	background-color: #444;
+	padding: 10px 15px;
+	font-weight: bold;
+	transition: .3s;
+}
+
+.more:hover{
+	background-color: #666;
+	transition: .3s;
+}
+
+
+.main-footer{
+	margin-bottom: 30px;
+}
+
+.main-footer ul{
+	margin: 0;
+	padding: 0;
+}
+
+.main-footer ul li{
+	list-style: none;
+	margin-bottom: 1px;
+}
+
+.main-footer ul li:nth-child(even){
+	display: none;
+}
+
+.main-footer ul li a{
+	display: block;
+	color: #fff;
+	background: #333;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 50px;
+	height: 50px;
+	margin: 1px 0;
+	transition: .3s;
+}
+
+.main-footer ul li a:hover{
+	background-color: #666;
+	transition: .3s;
+}
+
+
+
+
+
+@media (min-width: 600px) {
+
+.main-header .toggle-nav{
+	display: none;
+}
+
+.main-header .main-nav ul{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.main-nav ul li{
+	display: inline-block;
+	font-size: 14px;
+	width: 16%;
+}
+
+.banner{
+	display: block;
+}
+
+.vip-products{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.vip-products .product{
+	width: 48%;
+}
+
+}
+
+
+
+@media (min-width: 768px) {
+
+
+body{
+	margin: auto;
+	margin-top: 15px;
+}
+
+.vip-products .product{
+	width: 32%;
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+
+.main-footer{
+	background-color: red;
+	height: 130px;
+	border-radius: 20px 20px 0 0;
+	padding: 40px 0;
+	margin-bottom: 0;
+}
+
+.main-footer ul{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 0;
+	width: 60%;
+}
+
+.main-footer ul li{
+	font-size: 16px;
+	margin: 0 5px; 
+	line-height: 50px;
+	height: 50px;
+	color: #fff;
+	font-weight: 600;
+}
+
+.main-footer ul li:nth-child(even){
+	display: block;
+}
+
+.main-footer ul li a{
+	display: block;
+	color: #fff;
+	background-color: transparent;
+	text-align: center;
+	text-decoration: none;
+	text-transform:capitalize;
+	margin: 1px 0;
+	transition: .3s;
+}
+
+.main-footer ul li a:hover{
+	background-color: transparent;
+	color: #aaa;
+	transition: .3s;
+}
+
+}
